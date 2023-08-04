@@ -46,7 +46,7 @@ header {
 
 .big-cat {
   width: 40%;
-  height: 200px;  
+  height: 30vh;  
   object-fit: cover;
 }
 
@@ -58,7 +58,7 @@ header {
 
 .small-cat {
   width: 20%;
-  height: 100px; 
+  height: 20vh;
   margin: 1%;
   object-fit: cover;
 }
