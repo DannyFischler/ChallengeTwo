@@ -3,8 +3,8 @@
 }
 
 h1 {
-    font-family: 'Pacifico', cursive;
-    
+  font-family: 'Pacifico', cursive;
+  font-size: 55px;
 }
 
 body {
@@ -17,11 +17,18 @@ body {
 }
 
 header {
-    background: linear-gradient(to right, blue, black);
-    color: white;
+  background: linear-gradient(to right, blue, black);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+#about {
+    background-color: #fff;
+    font-size: 25px;
     padding: 20px;
-    text-align: center;
-
+    margin-top: 200px; /* This will push the section lower down the page. Adjust the value as needed. */
+    border-radius: 10px; /* This will give the section rounded corners. */
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.15); /* Optional: This will give the section a subtle shadow. */
 }
 
 .content {
@@ -42,25 +49,27 @@ header {
   width: 100%;
   height: 100%;
   display: block;
-}
-
-.big-cat {
-  width: 40%;
-  height: 30vh;  
   object-fit: cover;
 }
 
 .projects {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .small-cat {
-  width: 20%;
-  height: 20vh;
-  margin: 1%;
+  width: 45%;
+  height: auto; 
+  margin: 2.5%;
   object-fit: cover;
+}
+
+@media screen and (max-width: 600px) {
+  .small-cat {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -77,7 +86,7 @@ header {
   text-align: center;
   color: white;
   font-size: 20px;
-  background: rgba(0, 0, 0, 0.5); 
+  background: rgba(0, 0, 0, 0.5);
   padding: 10px;
   box-sizing: border-box;
   transition: transform 0.3s ease;
